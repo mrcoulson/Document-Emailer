@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Liz</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.5.5/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+		$(document).ready(function() {
+			$("#frmForm").validate();
+		});
+	//]]>
+</script>
+</head>
+
+<body>
+	<form id="frmForm" method="post" action="liz.php">
+    	<label for="txtName">Name</label> <input id="txtName" name="txtName" class="required">
+		<br />
+		<label for="txtEmail">Email</label> <input id="txtEmail" name="txtEmail" class="required email">
+    	<br />
+        <input id="btnSubmit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
