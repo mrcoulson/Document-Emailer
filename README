@@ -11,3 +11,6 @@ Important help to this point by: Peter Watkins
 2011-05-09:
 Works fine if web server runs SMTP.
 Now to figure out how to specify SMTP authentication for remote SMTP.
+
+2011-05-09:
+Switched to using Swift Mailer (swiftmailer.org). Seems great.
