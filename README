@@ -11,3 +11,6 @@ Important help to this point by: Peter Watkins
 2011-05-09:
 Works fine if web server runs SMTP.
 Now to figure out how to specify SMTP authentication for remote SMTP.
+
+2011-05-09:
+Added new branch called Swift. That is where I'm working for now.
