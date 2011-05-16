@@ -22,7 +22,12 @@ Next step would probably be to add confirmation in db that message was sent.
 Added confirmation of email sending today.  Next: "confirm email" field. 
 By the way, I know the detailed error messages shouldn't be used in production.
 
+<<<<<<< HEAD
 2011-05-16:
 Added email confirmation field. Also added check to make sure the document has not been requested
 more than 3 times to prevent mail bombing. Cleaned up PHP a bit; removed debugging echos, etc.
 Incidentally, the HTML validates as HTML5.
+=======
+2011-05-14:
+Also on the to-do list: limit number of file requests to, say, 3 to avoid mail bombing.
+>>>>>>> 4247c2d678ab8c681d0c4a8c5bee5675a0cc47c6
