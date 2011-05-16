@@ -14,3 +14,6 @@ Now to figure out how to specify SMTP authentication for remote SMTP.
 
 2011-05-09:
 Added new branch called Swift. That is where I'm working for now.
+
+2011-05-16:
+The branch to use is now swift-clean.
