@@ -21,3 +21,8 @@ Next step would probably be to add confirmation in db that message was sent.
 2011-05-13:
 Added confirmation of email sending today.  Next: "confirm email" field. 
 By the way, I know the detailed error messages shouldn't be used in production.
+
+2011-05-16:
+Added email confirmation field. Also added check to make sure the document has not been requested
+more than 3 times to prevent mail bombing. Cleaned up PHP a bit; removed debugging echos, etc.
+Incidentally, the HTML validates as HTML5.

@@ -9,6 +9,12 @@
 	//<![CDATA[
 		$(document).ready(function() {
 			$("#frmForm").validate();
+			$("#txtEmailConfirm").rules("add", {
+				equalTo: "#txtEmail",
+				messages: {
+					equalTo: "The email addresses must match."
+				}
+			});
 		});
 	//]]>
 </script>
@@ -20,6 +26,8 @@
 		<br />
 		<label for="txtEmail">Email</label> <input id="txtEmail" name="txtEmail" class="required email">
     	<br />
+		<label for="txtEmailConfirm">Confirm Email</label> <input id="txtEmailConfirm" name="txtEmailConfirm" class="required email">
+		<br />
         <input id="btnSubmit" type="submit" value="Submit">
     </form>
 </body>
