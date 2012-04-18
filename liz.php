@@ -19,6 +19,10 @@ $strToEmail = $_POST["txtEmail"];
 $strIP = $_SERVER['REMOTE_ADDR'];
 $strDateTime = date("Y-n-j H:i:s", time());
 
+// Define MaxAttempts variable
+// Defaults to three
+$maxAttempts = "3";
+
 // Connect to db.
 $link = mysql_connect ("localhost", "user", "pass") or die ("Error: " . mysql_error());
 mysql_select_db("pdfdownload");
@@ -26,10 +30,10 @@ mysql_select_db("pdfdownload");
 // How many times has this person requested a document?
 $queryForCountingEntries = mysql_query("SELECT COUNT(*) FROM requests WHERE email = '" . $strToEmail . "'") or die ("Could not count entries.");
 $rowEntries = mysql_fetch_row($queryForCountingEntries);
-if ($rowEntries[0] > 3)
+if ($rowEntries[0] > $maxAttempts)
 {
 	// The document has been requested too many times.  Stop.
-	echo "You have requested this document " . $rowEntries[0] . " times. That's too many tries.";
+	echo "You have requested this document " . $rowEntries[0] . " times. You are only allowed" . $maxAttempts . "requests.";
 	// Close db connection.
 	mysql_close ($link);
 	echo "<br /><a href='liz.html'>Back</a><br />";
