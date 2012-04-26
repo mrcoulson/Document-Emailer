@@ -10,11 +10,16 @@ Important help to this point by: Peter Watkins
 
 SETUP NOTES
 
-This application uses Swift Mailer to send emails.  You can get info and download the library at www.swiftmailer.org.  When setting this application up, you'll want to set your mail server settings and location to the Swift Mailer library to whatever is appropriate for your system.
+This application uses Swift Mailer to send emails.  You can get info and 
+download the library at www.swiftmailer.org.  When setting this application up, 
+you'll want to set your mail server settings and location to the Swift Mailer 
+library to whatever is appropriate for your system.
 
-You may also wish to adjust the maxAttempts variable to change the number of times one person can download a document.
+You may also wish to adjust the maxAttempts variable to change the number of 
+times one person can download a document.
 
-The SQL file will set up a basic table that will work with the application.  You'll need to set up a database and user first.
+The SQL file will set up a basic table that will work with the application.  
+You'll need to set up a database and user first.
 
 CHANGES
 
@@ -22,9 +27,9 @@ CHANGES
 Merged rpringle's maxAttempts setting change.
 
 2011-05-16:
-Added email confirmation field. Also added check to make sure the document has not been requested
-more than 3 times to prevent mail bombing. Cleaned up PHP a bit; removed debugging echos, etc.
-Incidentally, the HTML validates as HTML5.
+Added email confirmation field. Also added check to make sure the document has 
+not been requested more than 3 times to prevent mail bombing. Cleaned up PHP 
+a bit; removed debugging echos, etc. Incidentally, the HTML validates as HTML5.
 
 2011-05-13:
 Added confirmation of email sending today.  Next: "confirm email" field. 
