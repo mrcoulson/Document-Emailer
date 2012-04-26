@@ -33,7 +33,7 @@ $rowEntries = mysql_fetch_row($queryForCountingEntries);
 if ($rowEntries[0] > $maxAttempts)
 {
 	// The document has been requested too many times.  Stop.
-	echo "You have requested this document " . $rowEntries[0] . " times. You are only allowed" . $maxAttempts . "requests.";
+	echo "You have requested this document " . $rowEntries[0] . " times. You are only allowed " . $maxAttempts . " requests.";
 	// Close db connection.
 	mysql_close ($link);
 	echo "<br /><a href='liz.html'>Back</a><br />";
